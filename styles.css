@@ -1,0 +1,212 @@
+/* Resetando estilos básicos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo e fontes */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Cores */
+:root {
+    --cor-principal: #0097DA;
+    --cor-secundaria: #F2AF00;
+    --cor-cta: #27C595;
+}
+
+/* Cabeçalho */
+header {
+    background-color: var(--cor-principal);
+    padding: 10px 20px;
+    text-align: center;
+    color: #fff;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.btn-download {
+    background-color: var(--cor-secundaria);
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn-download:hover {
+    background-color: var(--cor-cta);
+}
+
+/* Seção Hero */
+.hero {
+    background-color: #f4f4f4;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    color: var(--cor-principal);
+}
+
+.hero p {
+    font-size: 1.2rem;
+    color: #666;
+    margin: 20px 0;
+}
+
+.hero .btn-download {
+    font-size: 1.1rem;
+    padding: 12px 25px;
+    margin-top: 20px;
+}
+
+/* Seção Como Funciona */
+.how-it-works {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.how-it-works h2 {
+    font-size: 2rem;
+    color: var(--cor-principal);
+    margin-bottom: 20px;
+}
+
+.steps {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.step {
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    width: 30%;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.step:hover {
+    transform: translateY(-5px);
+}
+
+.step h3 {
+    color: var(--cor-principal);
+    margin-bottom: 10px;
+}
+
+.step p {
+    color: #555;
+}
+
+/* Depoimentos */
+.testimonials {
+    background-color: #f4f4f4;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.testimonials h2 {
+    font-size: 2rem;
+    color: var(--cor-principal);
+    margin-bottom: 20px;
+}
+
+.testimonial {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.testimonial img {
+    width: 80px;  /* Ajuste para tamanho de 80px */
+    height: 80px;  /* Ajuste para manter o tamanho proporcional */
+    border-radius: 50%;  /* Deixa a imagem redonda */
+    margin-right: 15px;
+    object-fit: cover;  /* Garante que a imagem não seja distorcida */
+}
+
+.testimonial .text {
+    max-width: 500px;
+}
+
+.testimonial p {
+    font-size: 1rem;
+    color: #555;
+}
+
+.testimonial strong {
+    font-size: 1.1rem;
+    color: var(--cor-principal);
+}
+
+/* Seção CTA */
+.cta {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: var(--cor-principal);
+    color: #fff;
+}
+
+.cta h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+.cta .btn-download {
+    font-size: 1.2rem;
+    padding: 15px 30px;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    background-color: #f4f4f4;
+    padding: 10px;
+    color: #666;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .cta h2 {
+        font-size: 1.5rem;
+    }
+
+    .steps {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .step {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+}
